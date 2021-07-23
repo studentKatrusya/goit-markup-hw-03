@@ -10,12 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
  
 <body>
-    <!-- Header -->
+    <div class="container">
+        <!-- Header -->
     <header class="header-box">
         <nav class="navbar">
             <a href="#" class="logo"><span class="accent">Web</span>Studio
@@ -29,10 +33,11 @@
         <ul class="contacts-links">
             <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
             <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-
+    
         </ul>
     </header>
     <main>
+       
         <!-- Hero -->
         <section class="hero-box">
             <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
@@ -41,22 +46,26 @@
         <!--Advantages  -->
         <section class="advantages-box">
             <h2 class="title">Преимущества</h2>
-            <ul  class="list">
-                <li>
+            <ul class="list">
+                <li class="advantage-item">
                     <h3 class="advantages-subtitle">Внимание к деталям</h3>
-                    <p class="advantages-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="advantages-text">Идейные соображения, а также начало повседневной работы по формированию
+                        позиции.</p>
                 </li>
-                <li>
+                <li class="advantage-item">
                     <h3 class="advantages-subtitle">Пунктуальность</h3>
-                    <p class="advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                        собой.</p>
                 </li>
-                <li>
+                <li class="advantage-item">
                     <h3 class="advantages-subtitle">Планирование</h3>
-                    <p class="advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="advantages-text">Равным образом консультация с широким активом в значительной степени
+                        обуславливает.</p>
                 </li>
-                <li>
+                <li class="advantage-item">
                     <h3 class="advantages-subtitle">Современные технологии</h3>
-                    <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
                 </li>
             </ul>
         </section>
@@ -68,17 +77,17 @@
                 <li class="work-item"><img src="./images/box-2.jpg" alt="Мобильные приложения" width="370"></li>
                 <li class="work-item"><img src="./images/box-3.jpg" alt="Дизайнерские решения" width="370"></li>
             </ul>
-
+    
         </section>
         <!-- Team -->
         <section class="team-box">
             <h2 class="title">Наша команда</h2>
-            <ul  class="list">
+            <ul class="list">
                 <li class="team-item">
                     <img src="./images/img1.jpg" alt="Игорь" width="270" height="260">
                     <h3 class="team-subtitle">Игорь Демьяненко</h3>
                     <p class="team-text">Product Designer</p>
-
+    
                 </li>
                 <li class="team-item">
                     <img src="./images/img2.jpg" alt="Ольга" width="270" height="260">
@@ -93,31 +102,33 @@
                 <li class="team-item">
                     <img src="./images/img4.jpg" alt="Михаил" width="270" height="260">
                     <h3 class="team-subtitle">Михаил Ермаков</h3>
-                    <p  class="team-text">UI Designer</p>
+                    <p class="team-text">UI Designer</p>
                 </li>
             </ul>
         </section>
+       
     </main>
     <!-- Контакты -->
-<footer>
-    <a href="#" class="logo-white"><span class="accent">
-            Web</span>Studio
-    </a>
-    <address>
-        <ul class="list">
-            <li class="list-item">
-                <p class="list-text">г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
-            <li class="list-item">
-                <a href="tel:+380961111111" class="list-text">+38 096 111 11 11</a>
-            </li>
-            <li class="list-item">
-                <a href="mailto:info@devstudio.com" class="list-text">info@devstudio.com</a>
-            </li>
-        </ul>
-    </address>
-
-</footer>
+    <footer>
+        <a href="#" class="logo-white"><span class="accent">
+                Web</span>Studio
+        </a>
+        <address>
+            <ul class="list">
+                <li class="list-item">
+                    <p class="list-text">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="list-item">
+                    <a href="tel:+380961111111" class="list-text">+38 096 111 11 11</a>
+                </li>
+                <li class="list-item">
+                    <a href="mailto:info@devstudio.com" class="list-text">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+    
+    </footer>
+    </div>
 
 </body>
 
