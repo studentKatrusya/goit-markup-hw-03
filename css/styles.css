@@ -30,18 +30,16 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid green; */
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
-  width: 1600px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,9 +48,10 @@ a {
 .header-box {
   padding-top: 0;
   padding-bottom: 0;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 .nav-container {
-  height: 80px;
   display: flex;
 }
 .logo {
@@ -128,11 +127,8 @@ a {
   display: flex;
   margin-left: auto;
   align-items: center;
-  justify-content: flex-end;
 }
-.header-box {
-  border-bottom: 1px solid #ececec;
-}
+
 /* Hero */
 
 .title-hero {
@@ -145,8 +141,13 @@ a {
   text-transform: uppercase;
 }
 .hero-box {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #2f303a;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   display: inline-block;
@@ -168,6 +169,7 @@ a {
 }
 
 /* Advantages  */
+
 .advantage-list {
   display: flex;
 }
@@ -178,19 +180,19 @@ a {
 }
 .advantage-item {
   flex-basis: calc((100%-30 * 3) / 4);
+  /* margin-right: 30px; */
+}
+.advantage-item:not(:last-child) {
   margin-right: 30px;
 }
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--text-secondary);
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
-  /* outline: 1px solid tomato; */
-}
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .advantages-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -213,18 +215,25 @@ a {
 .work-box {
   padding-top: 0;
 }
-
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  /* outline: 1px solid tomato; */
+}
 .work-list {
   display: flex;
-  /* outline: 1px solid tomato; */
-  padding: 0;
-  margin: 0;
 }
 .work-item {
   flex-basis: calc((100%-30px * 2) / 3);
+}
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
-
 /* Team */
 .team-list {
   display: flex;
@@ -235,13 +244,10 @@ a {
 .team-item {
   background: var(--secondary-color);
   flex-basis: calc((100%-30px * 3) / 4);
-  margin-right: 30px;
   text-align: center;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  /* outline: 1px solid tomato; */
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -261,14 +267,16 @@ a {
   background-color: var(--primary-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* Footer */
-footer {
-  background: #2f303a;
-}
+
 .footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: #2f303a;
 }
 .logo-white {
   font-family: 'Raleway', sans-serif;
@@ -285,7 +293,12 @@ footer {
   font-size: 14px;
   line-height: 1.7;
 }
-
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  margin-top: 20px;
+}
 /* Portfolio */
 
 img {
@@ -307,13 +320,14 @@ img {
   padding: 6px 22px 6px 22px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .list-btns {
   justify-content: center;
+  margin-bottom: 50px;
 }
 .item-btns:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 .item-btn:hover,
 .item-btn:focus {
@@ -329,29 +343,22 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-secondary);
-  margin-left: 0;
-  margin-right: 0;
-  min-width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
+  margin-bottom: 4px;
 }
-/* .desc {
+.desc {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
-} */
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .text-link {
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.9;
   font-weight: 400;
   color: var(--text-primary);
-  min-width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
 }
 
 .list-btns {
@@ -360,7 +367,6 @@ img {
 
 .list-links {
   /* outline: 1px solid tomato; */
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
